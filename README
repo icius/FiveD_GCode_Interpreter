@@ -1,0 +1,42 @@
+Setup and Installation:
+
+1. sudo apt-get install -y gcc-avr avr-libc avrdude default-jre librxtx-java
+
+2. Choose a convenient working directory and cd to it.
+
+3. wget http://arduino.googlecode.com/files/arduino-0018.tgz
+
+4. tar -xvf arduino-0018.tgz
+
+5. wget --no-check-certificate -O Gen7_Arduino_IDE_Support.zip https://github.com/Traumflug/Generation_7_Electronics/blob/master/release%20documents/Gen7%20Arduino%20IDE%20Support.zip?raw=true
+
+6. unzip Gen7_Arduino_IDE_Support.zip
+
+7. cp -r Gen7\ Arduino\ IDE\ Support/Gen7 arduino-0018/hardware
+
+8. cd arduino-0018
+
+9. ./arduino &
+
+10. In the Arduino GUI go to File-->Open
+
+11. Browse to the location of the FiveD_GCode_Interpreter.pde file in this package.
+
+12. In the Arduino GUI go to Tools-->Board and select the "Gen7" option that fits your board.  Options are:
+
+  Gen7 with ATmega644 and 16 MHz
+  Gen7 with ATmega644 and 20 MHz
+  Gen7 with ATmega644P and 16 MHz
+  Gen7 with ATmega644P and 20 MHz
+
+13. In the Arduino GUI go to Sketch-->Verify/Compile
+
+14. The firmware should compile with no errors.
+
+15. Modify the configuration.h file in this package if needed to suit your board
+
+16. Connect your board's serial connection to your computer and connect appropriate power to the board.
+
+17. In the Arduino GUI go to Tools-->Serial Port and select the appropriate serial port to communicate with your board.
+
+18. In the Arduino GUI go to File-->Upload to I/O Board  The program will compile again and if there are no errors will upload the firmware to  your board. 
