@@ -38,6 +38,7 @@
 #define MAKERBOT_DEFAULTS 4
 #define BATHPROTO_DEFAULTS 5
 #define CUSTOM_DEFAULTS 6
+#define MENDEL_GEN7_DEFAULTS 7
 
 
 ///#define EXTRUDER_CONTROLLER EXTRUDER_CONTROLLER_RS485   //  means the extruder has its own controller that we talk to via RS485, 0 means it uses the integrated PID logic. 
@@ -55,6 +56,7 @@
   #define CPUTYPE_MEGA 3
   #define CPUTYPE_ATMEL328 4
  // #define CPU_EMC2  5 // this is just a theoretical one at this time
+  #define CPUTYPE_GEN7 6
  
  //#define BELT_PULLEY_TYPE MENDEL_8_TOOTH_ORIGINAL
  #define MENDEL_8_TOOTH_ORIGINAL 1
